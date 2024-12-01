@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.accordion-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .accordion-item {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-bottom: 1px solid #000;
+    border: 0;
+  }
+  
+  .accordion-header {
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid #000;
+    display: flex
+;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .accordion-header p {
+    font-size: 24px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    line-height: 140%;
+  }
+  
+  .accordion-header .arrow {
+    margin-left: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .accordion-content {
+    padding: 15px;
+    display: none;
+  }
+  
+  .accordion-content p {
+    margin: 0;
+  }
+  
+  .accordion-item.active .accordion-content {
+    display: block;
+  }
+  
+  .accordion-item.active .accordion-header .arrow {
+    transform: rotate(180deg);
+  
+  }
+
+
+  .accordion-item:last-of-type {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.accordion-item:first-of-type {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+.accordion-item .accordion-content {
+    display: none;
+  }
+  
+  .accordion-item.active .accordion-content {
+    display: block;
+  }
+  
